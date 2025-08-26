@@ -2,21 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
+    "ccc",
     "csc",
-    "cpc",
     "wml"
   ],
   "key": {
     "w": [
-      "minecraft:water_bucket",
-      "minecraft:lava_bucket"
-    ],
-    "l": [
-      "minecraft:lava_bucket",
       "minecraft:water_bucket"
     ],
-    "p": [
-      "minecraft:stone_pickaxe"
+    "l": [
+      "minecraft:lava_bucket"
     ],
     "c": [
       "minecraft:chiseled_copper",
@@ -29,6 +24,24 @@
       "minecraft:stonecutter"
     ]
   },
+  "ingredients": [
+    [
+      ""
+    ],
+    [
+      "minecraft:stonecutter"
+    ],
+    [
+      "minecraft:lava_bucket"
+    ],
+    [
+      "minecraft:waxed_chiseled_copper",
+      "minecraft:chiseled_copper"
+    ],
+    [
+      "minecraft:water_bucket"
+    ]
+  ],
   "result": {
     "id": "minecraft:guster_banner_pattern",
     "components": {
