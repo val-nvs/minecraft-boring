@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "asdf": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "click_bore": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "tesla:demo"
+  }
+}
