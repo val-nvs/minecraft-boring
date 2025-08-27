@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      "minecraft:stonecutter"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:armor_stand",
+    "components": {
+      "minecraft:custom_name": {
+        "text": "mine",
+        "color": "light_purple"
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:item_model": "minecraft:allay_spawn_egg"
+    }
+  }
+}
