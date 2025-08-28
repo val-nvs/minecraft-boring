@@ -1,4 +1,4 @@
-/execute 
+execute 
 if block ~-1 ~2 ~0 minecraft:waxed_cut_copper 
 if block ~1 ~2 ~0 minecraft:waxed_cut_copper 
 if block ~2 ~1 ~0 minecraft:waxed_cut_copper 

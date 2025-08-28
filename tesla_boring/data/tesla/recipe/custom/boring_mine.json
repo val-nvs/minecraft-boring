@@ -9,11 +9,37 @@
     "id": "minecraft:armor_stand",
     "components": {
       "minecraft:custom_name": {
-        "text": "mine",
+        "text": "Bore",
         "color": "light_purple"
       },
       "minecraft:enchantment_glint_override": true,
-      "minecraft:item_model": "minecraft:allay_spawn_egg"
+      "minecraft:item_model": "minecraft:allay_spawn_egg",
+      "minecraft:entity_data": {
+        "id": "minecraft:armor_stand",
+        "OnGround": true,
+        "NoGravity": true,
+        "Invulnerable": true,
+        "CustomNameVisible": true,
+        "Tags": [
+          "bore"
+        ],
+        "equipment": {
+          "head": {
+            "id": "minecraft:magenta_glazed_terracotta"
+          }
+        },
+        "Invisible": true,
+        "Marker": true,
+        "ShowArms": true,
+        "Small": true,
+        "Pose": {
+          "Head": [
+            0,
+            180,
+            0
+          ]
+        }
+      }
     }
   }
 }

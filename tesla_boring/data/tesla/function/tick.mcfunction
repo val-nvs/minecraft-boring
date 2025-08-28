@@ -1,0 +1,3 @@
+execute as @n[tag=bore] at @s run summon block_display ~ ~-.01 ~ {Rotation:[90F,0F],Tags:["bore_block"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[.9f,1f,.9f]},Passengers:[{id:"minecraft:chest_minecart",NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["bore_chest"],DisplayState:{Name:"minecraft:chiseled_copper"}}]}
+execute as @n[tag=bore] at @s run data modify entity @n[tag=bore_chest] Rotation set from entity @s Rotation
+execute as @n[tag=bore] at @s run tag @s remove bore
