@@ -43,25 +43,26 @@
     ]
   ],
   "result": {
-    "id": "minecraft:guster_banner_pattern",
+    "id": "minecraft:armor_stand",
     "components": {
-      "minecraft:consumable": {
-        "consume_seconds": 0.05,
-        "animation": "none",
-        "has_consume_particles": false,
-        "sound": "block.note_block.bell",
-        "on_consume_effects": []
-      },
-      "minecraft:item_name": {
-        "text": "Boring Machine",
+      "minecraft:custom_name": {
+        "text": "Bore",
         "color": "light_purple"
       },
       "minecraft:enchantment_glint_override": true,
-      "minecraft:custom_data": {
-        "click_bore": true
-      },
-      "!minecraft:provides_banner_patterns": {}
-    },
-    "count": 1
+      "minecraft:item_model": "minecraft:allay_spawn_egg",
+      "minecraft:entity_data": {
+        "id": "minecraft:armor_stand",
+        "OnGround": true,
+        "NoGravity": true,
+        "Invulnerable": true,
+        "Tags": ["borePlace","bore","boreA"],
+        "Invisible": true,
+        "Marker": true,
+        "equipment": {"head": {"id": "minecraft:glass"}},
+        "Pose": {"Head": [0,180,0]},
+        "Small": true
+      }
+    }
   }
 }
