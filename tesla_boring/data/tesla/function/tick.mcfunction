@@ -1,3 +1,5 @@
-execute as @n[tag=bore] at @s run summon block_display ~ ~-.01 ~ {Passengers:[{id:"minecraft:chest_minecart",NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["bore_chest"],DisplayState:{Name:"minecraft:cactus"},DisplayOffset:8.4}]}
-execute as @n[tag=bore] at @s run data modify entity @n[tag=bore_chest] Rotation set from entity @s Rotation
+execute as @n[tag=bore] at @s run summon block_display ~ ~-.05 ~ {Tags:["boreB"],Passengers:[{id:"minecraft:chest_minecart",Tags:["boreC"],NoGravity:1b,Silent:1b,Invulnerable:1b,DisplayState:{Name:"minecraft:chiseled_copper"},DisplayOffset:9,Passengers:[{id:"minecraft:armor_stand",Tags:["boreD"],NoGravity:1b,Small:1b,Invisible:1b,Pose:{Head:[180f,0f,0f],LeftArm:[180f,0f,100f]},equipment:{head:{id:"minecraft:magenta_glazed_terracotta",count:1},offhand:{id:"minecraft:stone_pickaxe",count:1},},Passengers:[{id:"minecraft:interaction",Tags:["boreF"],width:.6f,height:.01f,response:1b,Passengers:[{id:"minecraft:block_display",Tags:["boreE"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-.63f,-1.12f,-.51f],scale:[1.26f,.65f,1.02f]},block_state:{Name:"minecraft:copper_grate"}}]}]}]}]}
+execute as @n[tag=boreF,nbt={interaction:{}}] at @s run say F
+execute as @n[tag=boreF,nbt={interaction:{}}] at @s run tag @s remove boreF
+execute as @n[tag=bore] at @s run data modify entity @n[tag=boreD] Rotation set from entity @s Rotation
 execute as @n[tag=bore] at @s run tag @s remove bore
