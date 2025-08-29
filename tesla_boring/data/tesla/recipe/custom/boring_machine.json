@@ -59,7 +59,7 @@
         "Tags": ["borePlace","bore","boreA"],
         "Invisible": true,
         "Marker": true,
-        "equipment": {"head": {"id": "minecraft:glass"}},
+        "equipment": {"head": {"id": "minecraft:magenta_glazed_terracotta"}},
         "Pose": {"Head": [0,180,0]},
         "Small": true
       }

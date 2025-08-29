@@ -1,0 +1,66 @@
+[
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:armor_stand",
+            "nbt": "{Rotation:[45.0f,0.0f]}"
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:armor_stand",
+            "nbt": "{Rotation:[90.0f,0.0f]}"
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:armor_stand",
+            "nbt": "{Rotation:[135.0f,0.0f]}"
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:armor_stand",
+            "nbt": "{Rotation:[180.0f,0.0f]}"
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:armor_stand",
+            "nbt": "{Rotation:[-135.0f,0.0f]}"
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:armor_stand",
+            "nbt": "{Rotation:[-90.0f,0.0f]}"
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:armor_stand",
+            "nbt": "{Rotation:[-45.0f,0.0f]}"
+          }
+        }
+      ]
+    }
+  }
+]

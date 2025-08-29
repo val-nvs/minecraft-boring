@@ -21,7 +21,7 @@
 					LeftArm:[180f,0f,100f]
 				},
 				equipment:{
-					head:{id:"minecraft:magenta_glazed_terracotta",count:1},
+					head:{id:"minecraft:lightning_rod",count:1},
 					offhand:{id:"minecraft:stone_pickaxe",count:1}
 				},
 				DisabledSlots:4144959,
@@ -42,17 +42,18 @@
 		}]
 	}
 
-!execute as @n[tag=borePlace] at @s run 
-	data modify entity @n[tag=boreC] Rotation set from entity @s Rotation
 
+# boreD is the armor stand
 !execute as @n[tag=borePlace] at @s run 
 	data modify entity @n[tag=boreD] Rotation set from entity @s Rotation
 
 !execute as @n[tag=borePlace] at @s run 
-	data modify entity @n[tag=boreE] Rotation set from entity @s Rotation
+	data modify entity @n[tag=boreC] Rotation set from entity @s Rotation
 
 !execute as @n[tag=borePlace] at @s run 
 	data modify entity @n[tag=boreF] Rotation set from entity @s Rotation
+
+
 
 !execute as @n[tag=borePlace] at @s 
 	run tag @s remove borePlace
