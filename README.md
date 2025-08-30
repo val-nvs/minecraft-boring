@@ -2,7 +2,7 @@
 1.21.8
 
 Folder `\tesla_boring\` goes inside `\datapacks\` in your world save
-
+.
 ```.minecraft\saves\[your_world]\datapacks\tesla_boring```
 
 ### Special syntax in `\function-master\`
@@ -15,13 +15,14 @@ example:
 !execute・as・@s・run・
 ———execute・at・@s・run・
 ——————say・hello
-!give・@p・coal
-———[
-———item_model="diamond",
-———item_name="Diamond"
+
+!give・@p・
+———coal[
+——————item_model="diamond",
+——————item_name="Diamond"
 ———]・1
 ```
-after running .bat, in `\function\` it generates:
+after running .bat, it generates in `\function\`:
 ```
 execute・as・@s・run・execute・at・@s・run・say・hello
 give @p coal[item_model="diamond",item_name="Diamond"] 1
