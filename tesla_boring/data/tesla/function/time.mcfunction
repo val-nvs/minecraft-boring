@@ -1,4 +1,4 @@
-schedule function tesla:time 0.5s replace
+schedule function tesla:time 2t replace
 scoreboard players add @e[tag=boreOn] teslatime 1
 execute as @e[scores={teslatime=01}] at @s if block ~-1 ~00 ~00 air run scoreboard players add @e[tag=boreOn] teslatime 1
 execute as @e[scores={teslatime=01}] at @s run setblock ~-1 ~00 ~00 air destroy
@@ -35,11 +35,11 @@ execute as @e[scores={teslatime=16}] at @s run setblock ~01 ~01 ~01 air destroy
 execute as @e[scores={teslatime=17}] at @s run data modify entity @n[tag=boreC] Rotation set from entity @n[tag=boreB] Rotation
 execute as @e[scores={teslatime=17}] at @s run data modify entity @n[tag=boreF] Rotation set from entity @n[tag=boreB] Rotation
 execute as @e[scores={teslatime=17}] at @s run setblock ~ ~ ~ minecraft:hopper destroy
-execute as @e[scores={teslatime=18}] at @s run tp @e[type=item,distance=..5] ~ ~1 ~
+execute as @e[scores={teslatime=17}] at @s run tp @e[type=item,distance=..5] ~ ~1 ~
 execute as @e[scores={teslatime=23}] at @s run setblock ~ ~ ~ minecraft:air
 execute as @e[scores={teslatime=23}] at @s run data modify entity @n[tag=boreC] Rotation set from entity @n[tag=boreA] Rotation
 execute as @e[scores={teslatime=23}] at @s run data modify entity @n[tag=boreF] Rotation set from entity @n[tag=boreA] Rotation
-execute as @e[scores={teslatime=24}] at @s if predicate tesla:north run execute as @e[tag=boreAB,distance=..1.5] at @s run tp @s ~ ~ ~-1
+execute as @e[scores={teslatime=24}] at @s unless predicate tesla:south unless predicate tesla:east unless predicate tesla:west unless predicate tesla:northwest unless predicate tesla:northeast unless predicate tesla:southwest unless predicate tesla:southeast run execute as @e[tag=boreAB,distance=..1.5] at @s run tp @s ~ ~ ~-1
 execute as @e[scores={teslatime=24}] at @s if predicate tesla:south run execute as @e[tag=boreAB,distance=..1.5] at @s run tp @s ~ ~ ~1
 execute as @e[scores={teslatime=24}] at @s if predicate tesla:east run execute as @e[tag=boreAB,distance=..1.5] at @s run tp @s ~1 ~ ~
 execute as @e[scores={teslatime=24}] at @s if predicate tesla:west run execute as @e[tag=boreAB,distance=..1.5] at @s run tp @s ~-1 ~ ~
@@ -47,5 +47,6 @@ execute as @e[scores={teslatime=24}] at @s if predicate tesla:northwest run exec
 execute as @e[scores={teslatime=24}] at @s if predicate tesla:northeast run execute as @e[tag=boreAB,distance=..1.5] at @s run tp @s ~1 ~ ~-1
 execute as @e[scores={teslatime=24}] at @s if predicate tesla:southwest run execute as @e[tag=boreAB,distance=..1.5] at @s run tp @s ~-1 ~ ~1
 execute as @e[scores={teslatime=24}] at @s if predicate tesla:southeast run execute as @e[tag=boreAB,distance=..1.5] at @s run tp @s ~1 ~ ~1
-execute as @e[scores={teslatime=25..}] at @s run tag @s remove boreOn
-execute as @e[scores={teslatime=25..}] at @s run scoreboard players reset @s teslatime
+execute as @e[scores={teslatime=25}] at @s run fill ~ ~-1 ~ ~ ~-1 ~ minecraft:cobblestone replace air
+execute as @e[scores={teslatime=26..}] at @s run tag @s remove boreOn
+execute as @e[scores={teslatime=26..}] at @s run scoreboard players reset @s teslatime
