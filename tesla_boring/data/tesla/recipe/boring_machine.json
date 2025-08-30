@@ -56,7 +56,7 @@
         "OnGround": true,
         "NoGravity": true,
         "Invulnerable": true,
-        "Tags": ["borePlace","bore","boreA"],
+        "Tags": ["borePlace","bore","boreA","boreAB"],
         "Invisible": true,
         "Marker": true,
         "equipment": {"head": {"id": "minecraft:magenta_glazed_terracotta"}},

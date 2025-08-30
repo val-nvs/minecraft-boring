@@ -1,6 +1,6 @@
 !execute as @n[tag=borePlace] at @s run 
 	summon block_display ~ ~-0.05 ~ {
-		Tags:["bore","boreB"],
+		Tags:["bore","boreB","boreAB"],
 		Passengers:[{
 			id:"minecraft:chest_minecart",
 			Tags:["bore","boreC"],

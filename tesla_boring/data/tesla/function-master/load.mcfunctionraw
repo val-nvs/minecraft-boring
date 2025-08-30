@@ -2,7 +2,7 @@
 
 !function tesla:time
 
-!recipe give @a tesla:custom/boring_mine
-!recipe give @a tesla:custom/boring_machine
+!recipe give @a tesla:boring_machine
 
 !scoreboard objectives add teslatime dummy
+!scoreboard objectives add teslafuel dummy
