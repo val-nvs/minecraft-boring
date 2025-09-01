@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ccc",
+    "csc",
+    "ccc"
+  ],
+  "key": {
+    "c": [
+      "minecraft:chiseled_copper",
+      "minecraft:waxed_chiseled_copper"
+    ],
+    "s": [
+      "minecraft:calibrated_sculk_sensor"
+    ]
+  },
+  "result": {
+    "id": "minecraft:armor_stand",
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Tesla's Apparatus",
+        "color": "gold"
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:item_model": "minecraft:light",
+      "minecraft:entity_data": {
+        "id": "minecraft:armor_stand",
+        "OnGround": true,
+        "NoGravity": true,
+        "Invulnerable": true,
+        "CustomNameVisible": true,
+        "Tags": [
+          "bore"
+        ],
+        "Invisible": false,
+        "Marker": true,
+        "ShowArms": true,
+        "Small": true,
+        "Pose": {
+          "Body": [
+            0,
+            180,
+            0
+          ],
+          "Head": [
+            0,
+            180,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

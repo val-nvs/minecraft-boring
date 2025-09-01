@@ -3,6 +3,7 @@
 !function tesla:time
 
 !recipe give @a tesla:boring_machine
+!recipe give @a tesla:apparatus
 
 !scoreboard objectives add teslatime dummy
 !scoreboard objectives add teslafuel dummy
